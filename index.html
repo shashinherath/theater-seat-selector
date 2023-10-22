@@ -4,6 +4,58 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Theater Seat Selector</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
   </head>
-  <body></body>
+  <body>
+    <div class="theater-container">
+      <label for="theater">Select a movie</label>
+      <select name="theater" id="theater">
+        <option value="1">The Avengers</option>
+        <option value="2">Fast X</option>
+      </select>
+    </div>
+
+    <ul>
+      <li>
+        <div class="seat">
+          <small>Available</small>
+        </div>
+      </li>
+      <li>
+        <div class="seat selected">
+          <small>Selected</small>
+        </div>
+      </li>
+      <li>
+        <div class="seat occupied">
+          <small>Occupied</small>
+        </div>
+      </li>
+    </ul>
+    <div class="row">
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+    </div>
+    <div class="row">
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+    </div>
+  </body>
 </html>
