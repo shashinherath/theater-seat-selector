@@ -1,84 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Theater Seat Selector</title>
-    <link rel="stylesheet" href="styles.css" />
-    <script src="script.js" defer></script>
-  </head>
-  <body>
-    <div class="theater-container">
-      <label for="theater">Select a movie</label>
-      <select name="theater" id="theater">
-        <option value="1">The Avengers</option>
-        <option value="2">Fast X</option>
-      </select>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sugarland Theaters - Seat Booking</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Sugarland Theaters - Seat Booking</h1>
+  </header>
+  <main id="main-container">
+    <div class="screen-container">
+      <div class="trapezium-screen"></div>
     </div>
-
-    <ul class="showcase">
-      <li>
-        <div class="seat">
-          <small>Available</small>
-        </div>
-      </li>
-      <li>
-        <div class="seat selected">
-          <small>Selected</small>
-        </div>
-      </li>
-      <li>
-        <div class="seat occupied">
-          <small>Occupied</small>
-        </div>
-      </li>
-    </ul>
-    <div class="container">
-      <div class="screen"></div>
-
-      <div class="row">
-        <div class="seat"></div>
-        <div class="seat"></div>
-        <div class="seat"></div>
-        <div class="seat"></div>
-        <div class="seat"></div>
-        <div class="seat"></div>
-        <div class="seat"></div>
-        <div class="seat"></div>
-        <div class="seat"></div>
-        <div class="seat"></div>
-      </div>
-      <div class="row">
-        <div class="seat"></div>
-        <div class="seat"></div>
-        <div class="seat"></div>
-        <div class="seat"></div>
-        <div class="seat occupied"></div>
-        <div class="seat occupied"></div>
-        <div class="seat occupied"></div>
-        <div class="seat"></div>
-        <div class="seat"></div>
-        <div class="seat"></div>
-      </div>
-      <div class="row">
-        <div class="seat"></div>
-        <div class="seat"></div>
-        <div class="seat"></div>
-        <div class="seat"></div>
-        <div class="seat occupied"></div>
-        <div class="seat occupied"></div>
-        <div class="seat occupied"></div>
-        <div class="seat"></div>
-        <div class="seat"></div>
-        <div class="seat"></div>
-      </div>
-    </div>
-
-    <p class="text">
-      You have selected <span id="count">0</span> seats for a price of $<span
-        id="total"
-        >0</span
-      >
-    </p>
-  </body>
+  </main>
+  <footer>
+    <p>&copy; <script> document.write(new Date().getFullYear())</script> Sugarland Theaters. All rights reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
 </html>
