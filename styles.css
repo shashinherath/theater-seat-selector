@@ -1,0 +1,87 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header, footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+}
+
+main {
+  text-align: center;
+  padding: 20px;
+}
+
+.screen-container {
+  margin: auto;
+  position: relative;
+  width: 60%;
+  height: 100px;
+  background-color: white;
+}
+
+.trapezium-screen {
+  position: relative;
+  right: 1%;
+  border-Top: 100px solid rgb(176, 174, 174);
+  border-right: 40px solid transparent;
+  border-left: 40px solid transparent;
+}
+
+.theater-div {
+  display: inline-block;
+  margin: 20px;
+}
+
+.subsection-div {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.seat-row {
+  display: flex;
+}
+
+.seat {
+  width: 30px;
+  height: 30px;
+  margin: 5px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.available {
+  background-color: #9aff9a;
+}
+
+.booked {
+  background-color: #ff6f6f;
+}
+
+.selected {
+  background-color: #87ceeb;
+}
+
+@media screen and (max-width: 768px) {
+  .seat {
+    width: 20px;
+    height: 20px;
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .seat {
+    width: 15px;
+    height: 15px;
+    font-size: 10px;
+  }
+}
